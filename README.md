@@ -7,7 +7,7 @@ A bird course is a course that is not very difficult, or does not take a lot of 
 ### The code seems like it takes a long time to run...
 Unfortunately, yes. Due to UWFlow having dynamic components, the program must open each page with a webdriver to load the data before scraping it. That means it takes approximately 4-5 seconds for the data of each subject to be scraped. To prevent data loss due to battery dying, overheating, or your cat jumping onto the power button, the program saves a file every 50 courses scraped. 
 
-If you find your program terminating unexpectedly, you can change line 161:
+If you find your program terminating unexpectedly, you can change line 160:
 ```python
 for page in range(0,max_page_2):
 ```
@@ -15,7 +15,7 @@ into
 ```python
 for page in range(<THE PAGE YOU ENDED WITH>,max_page_2):
 ```
-If you would like to back up more often, you can change the integer in line 163:
+If you would like to back up more often, you can change the integer in line 162:
 ```python
 if coursecounter>=49:
 ```
