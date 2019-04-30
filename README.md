@@ -1,11 +1,11 @@
 # How Birdy?
 
 ### What do you mean, how birdy?
-A bird course is a course that is not very difficult, or does not take a lot of effort to get a high mark. This piece of code evaluates how birdy a course is at my university, the University of Waterloo. The previous students have set up a website called UWFlow, on which students can vote for the difficulty and usefulness of the courses they have taken. The code draws from UWFlow when evaluating the courses' difficulty.
+A bird course is a course that is not very difficult to get a relatively high mark. This program evaluates how birdy a course is at my university, the University of Waterloo. Previous students have set up a website called UWFlow, on which students can vote for the difficulty and usefulness of courses they have taken. The program draws from UWFlow when evaluating the courses' difficulty.
 
 
 ### The code seems like it takes a long time to run...
-Unfortunately, yes. Due to UWFlow having dynamic components, the program must open each page with a webdriver to load the data before scraping it. That means it takes approximately 4-5 seconds for the data of each subject to be scraped. To prevent data loss due to battery dying, overheating, or your cat jumping onto the power button, the program saves a file every 50 courses scraped. 
+Unfortunately, yes. Due to UWFlow having dynamic components, the program must open each page with a webdriver to load the data before scraping it. That means it takes approximately 4-5 seconds for each subject to be scraped. To prevent data loss due to battery dying, overheating, or your cat jumping onto the power button, the program outputs a savefile every 50 courses scraped. 
 
 If you find your program terminating unexpectedly, you can change line 160:
 ```python
