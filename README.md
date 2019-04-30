@@ -22,10 +22,10 @@ if coursecounter>=49:
 into a smaller positive integer.
 
 ### What if the courses change?
-The courses may change from year to year. For the future academic years, you may change the number in line 36:
+The courses may change from year to year. For future academic years, you may change the number in line 36:
 ```python
 base_url="""http://www.ucalendar.uwaterloo.ca/1920/COURSE/course-"""
 ```
-into the corresponding academic year. For example, 1920 means that the scraper is collecting data from the 2019-20 school year. Next year you may replace it with 2021.
+into the corresponding academic year. For example, 1920 means the scraper is collecting data from the 2019-20 school year. Next year you may want to replace it with 2021.
 
-#### Note: the program uses the APIs Selenium Webdriver (Chrome), Pandas, and BeautifulSoup4. Make sure you have those installed.
+#### Note: the program uses the APIs Selenium Webdriver (Chrome), Pandas, and BeautifulSoup4. Make sure you have these installed.
